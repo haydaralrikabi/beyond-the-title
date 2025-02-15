@@ -1,5 +1,6 @@
 import React from "react";
 import { BackNavbar } from "../Navigation/BackNavbar";
+import styles from "./Privacy.module.css";
 
 export const Privacy: React.FC = () => {
   return (
@@ -30,10 +31,21 @@ export const Privacy: React.FC = () => {
               How We Use Your Information
             </h2>
             <p className="text-gray-300 mb-4">
-              We use the information we collect to: - Provide and maintain our
-              services - Send you newsletters and updates (if subscribed) -
-              Respond to your inquiries and requests - Improve our website and
-              services
+              We use the information we collect to:
+              <ul className={styles.ul}>
+                <li className={styles.listItem}>
+                  Provide and maintain our services.
+                </li>
+                <li className={styles.listItem}>
+                  Send you newsletters and updates (if subscribed).
+                </li>
+                <li className={styles.listItem}>
+                  Respond to your inquiries and requests.
+                </li>
+                <li className={styles.listItem}>
+                  Improve our website and services
+                </li>
+              </ul>
             </p>
           </div>
         </div>
