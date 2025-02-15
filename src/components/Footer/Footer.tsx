@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Linkedin, Youtube, XIcon } from "lucide-react";
 
 export const Footer: React.FC = () => {
@@ -88,21 +89,24 @@ export const Footer: React.FC = () => {
             reserved.
           </p>
           <div className="flex space-x-6">
-            <a
-              href="/disclaimer"
+            <Link
+              to="/disclaimer"
               className="text-gray-400 hover:text-white text-sm"
             >
               Disclaimer
-            </a>
-            <a
-              href="/privacy"
+            </Link>
+            <Link
+              to="/privacy"
               className="text-gray-400 hover:text-white text-sm"
             >
               Privacy Policy
-            </a>
-            <a href="/terms" className="text-gray-400 hover:text-white text-sm">
+            </Link>
+            <Link
+              to="/terms"
+              className="text-gray-400 hover:text-white text-sm"
+            >
               Terms of Use
-            </a>
+            </Link>
           </div>
         </div>
       </div>
