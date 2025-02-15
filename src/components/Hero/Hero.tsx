@@ -17,7 +17,8 @@ export const Hero: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 py-20 md:py-32">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              INSPIRING LEADERSHIP BEYOND THE TITLE
+              INSPIRING LEADERSHIP{" "}
+              <span className="inline-block w-full">BEYOND THE TITLE</span>
             </h1>
             <p className="text-xl text-gray-300 mb-8">
               THOUGHT LEADER & SPEAKER
